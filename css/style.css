@@ -1,0 +1,31 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* primary:#F2B6A0;light brown
+secondary: #724073;dark pink
+tertiary: #A66D92; light pink */
+
+body{
+  background:#F2B6A0;
+  color: #724073;
+}
+
+jumbotron{
+background:#F2B6A0;
+}
+
+.red{
+  width:150px;
+  height:150px;
+  background: blue;
+  margin: 3px;
+}
+.green{
+  width:150px;
+  height:150px;
+  background: yellow;
+  margin: 3px;
+}
