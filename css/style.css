@@ -9,23 +9,218 @@ secondary: #724073;dark pink
 tertiary: #A66D92; light pink */
 
 body{
-  background:#F2B6A0;
+  /* background:#F2B6A0; */
   color: #724073;
 }
-
-jumbotron{
-background:#F2B6A0;
+.orangeText{
+  color: #F2B6A0;
+}
+.orangeBg{
+  background: #F2B6A0;
 }
 
+.pinkBg {
+
+}
+.jumbotron{
+background:#A66D92;
+color:#F2B6A0;
+}
+.menuBtn{
+  background: #A66D92;
+}
 .red{
-  width:150px;
-  height:150px;
-  background: blue;
-  margin: 3px;
+  width:100px;
+  height:100px;
+  background: #724073;
+  margin: 3px auto;
+  border: 5px solid #A66D92;
+
 }
 .green{
-  width:150px;
-  height:150px;
-  background: yellow;
-  margin: 3px;
+  width:100px;
+  height:100px;
+  background: #724073;
+  margin: 3px auto;
+  border: 5px solid #A66D92;
+}
+.yellow{
+  width:100px;
+  height:100px;
+  background: #724073;
+  margin: 3px auto;
+  border: 5px solid #A66D92;
+}
+.points{
+  height : 60px;
+  width: 80%;
+  background : #A66D92;
+  margin: 20px auto 50px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 3px 10px;
+  color:white;
+
+
+}
+.totalPoints{
+  color: #724073;
+  background : white;
+  height: 100px;
+}
+.mybtn{
+  width:100%;
+  height: 60px;
+}
+.buttons{
+  margin:auto;
+  margin-bottom: 100px;
+  /* border: 2px solid red; */
+}
+
+
+
+/* bank nav */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+.amount{
+ font-size: 35px;
+}
+.overlay {
+  height: 100%;
+  width: 60%;
+  display:none;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.menuIcon{
+  font-size:30px;
+  cursor:pointer;
+  margin-left :-80px;
+  margin-right : 20px;
+  /* padding:0px; */
+}
+.round{
+  border-radius: 50%;
+  width: 60px;
+  height:60px;
+
+}
+
+.transferButtonsFrom, .transferButtonsTo{
+  background: blue;
+
+  width : 120px;
+  height: 80px;
+  border:5px solid #A66D92;
+  color: white;
+
+  margin: 0 auto 20px;
+}
+.online{
+    background: url('../images/online.jpeg') no-repeat;
+}
+.go{
+    background: url('../images/go.jpeg') no-repeat;
+}
+.credit{
+    background: url('../images/credit.jpeg') no-repeat;
+}
+.kiwi{
+    background: url('../images/kiwi.png') no-repeat;
+}
+.serious{
+    background: url('../images/serious.jpeg') no-repeat;
+}
+.label{
+  position: relative;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+  display:none;
+  font-weight: bold;
+
+}
+.highlight{
+  border:5px solid yellow;
+
+}
+.fromTo{
+  /* width:300px; */
+  color:#A66D92;
+  font-weight: bold;
+  /* border:3px solid black; */
+
+}
+.fromToCont{
+  width: 80%;
+  margin:auto;
+
+}
+.transfer{
+  width: 60%;
+  display:block;
+  margin: 30px auto;
+  background: #F2B6A0;
+}
+.transferAmt{
+  margin-left : 40px;
+  margin-right: 10px;
+  border: 3px solid #F2B6A0;
+}
+#transferAmt{
+  margin-left: 100px;
+  color: #A66D92;
+}
+.labelAmt{
+  color:white;
+}
+#amount{
+  margin-top: 50px;
+  background: #A66D92;
+  padding:15px 0;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }

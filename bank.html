@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet"  href="bootstrap-4.3.1-dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Code Club</title>
+  </head>
+  <body >
+
+
+   <h1 class="jumbotron text-center">
+
+   <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closeNav" >&times;</a>
+      <div class="overlay-content">
+        <button class="btn btn-info menuBtn" id="acc">Accounts</button>
+        <button class="btn btn-info menuBtn" id="trans">Transfers</button>
+        <button class="btn btn-info menuBtn" id="pay">Payments</button>
+        <h4 class="bg-dark mt-5 "> ATM </h4>
+        <button class="btn btn-info menuBtn" id="dep">Deposit</button>
+        <button class="btn btn-info menuBtn" id="with">Withdraw</button>
+      </div>
+    </div>
+
+
+    <span class="menuIcon"  id="openNav" >&#9776; </span>
+
+     My Bank App</h1>
+
+    <div class="container">
+      <div class="" id="pin">
+      <h3 class="text-center"> Enter Pin </h3>
+
+      <div class="row pl-5">
+        <div class="col-4">
+          <p class="display-4  orangeBg round pl-2"> 1 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 2 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 3 </p>
+        </div>
+      </div>
+
+      <div class="row pl-5">
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 4 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 5 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 6 </p>
+        </div>
+      </div>
+
+      <div class="row pl-5">
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 7 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 8 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 9 </p>
+        </div>
+      </div>
+      <div class="row pl-5">
+        <div class="col-4">
+          <p class="display-4 orangeBg round pl-2"> 0 </p>
+        </div>
+        <div class="col-4">
+          <p class="display-4 orangeBg round "> <i class="fas fa-arrow-circle-left"></i> </p>
+        </div>
+        <div class="col-4">
+          <p class=" orangeBg round pl-1 pt-3"> Enter </p>
+        </div>
+      </div>
+    </div>
+
+       <!-- <div id="totalPoints" class="amount"> <label for="amount"> Amount :</label> <input type="text" id="amount" />  </div> <br> <br>
+      <div id = "points" class="points"> Balance : $ 5400.00 </div> -->
+
+      <div id="accounts" class="buttons2">
+        <button type="button" class="btn btn-primary  mybtn mb-4">Online : $ 5400</button>
+        <button type="button" class="btn btn-secondary  mybtn mb-4" >Go : $ 400</button>
+        <button type="button" class="btn btn-success  mybtn mb-4">Credit card limit : $ 5000 <br> Available : $ -300</button>
+        <button type="button" class="btn btn-danger mybtn mb-4">Kiwi saver : $ 6855</button>
+        <button type="button" class="btn btn-warning mybtn mb-4">Serious saver : $ 12780</button>
+      </div>
+
+      <div class="" id="transfers">
+        <div class="row fromToCont">
+          <div class="h4 text-center fromTo col"> From </div>
+           <div class="h4 text-center fromTo col"> To </div>
+        </div>
+
+          <hr>
+
+
+          <div class="row">
+            <div  class="col">
+              <div class="transferButtonsFrom online" id="onlineFrom">
+                <p class="label onlinelbl"> Online <p> </div>
+            </div>
+
+            <div  class="col">
+              <div class="transferButtonsTo online" id="onlineTo">
+                <p class="label onlinelbl"> Online <p> </div>
+            </div>
+
+          </div><!--row online-->
+
+
+
+          <div class="row">
+            <div class="col">
+              <div  class="transferButtonsFrom go" id="goFrom">
+                <p class="label golbl"> Go <p> </div>
+            </div>
+            <div class="col">
+              <div  class="transferButtonsTo go" id="goTo">
+                <p class="label golbl"> Go <p> </div>
+            </div>
+          </div> <!--row go-->
+
+          <div class="row">
+            <div class="col">
+              <div  class="transferButtonsFrom credit" id="creditFrom">
+                <p class="label creditlbl"> Credit Card<p> </div>
+            </div>
+            <div class="col">
+              <div  class="transferButtonsTo credit" id="creditTo">
+                <p class="label creditlbl"> Credit Card<p> </div>
+            </div>
+          </div> <!--row credit-->
+
+          <!-- <div class="row">
+            <div class="col">
+              <div  class="transferButtons kiwi" id="kiwiFrom"> <p class="label kiwilbl"> Kiwi Saver <p> </div>
+            </div>
+            <div class="col">
+              <div  class="transferButtons kiwi" id="kiwiTo"> <p class="label kiwilbl"> Kiwi Saver <p> </div>
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col">
+              <div  class="transferButtonsFrom serious" id="seriousFrom">
+                <p class="label seriouslbl"> Serious Saver <p> </div>
+            </div>
+            <div class="col">
+              <div  class="transferButtonsTo serious" id="seriousTo">
+                <p class="label seriouslbl"> Serious Saver <p> </div>
+            </div>
+          </div> <!--row serious-->
+
+
+
+
+
+
+      <div  id="amount">
+        <div>
+          <label for="transferAmt" class="transferAmt labelAmt ml-5"> Amount: $</label>
+          <input type = "text" class="transferAmt" id="transferAmt" value="enter amount">
+        </div>
+        <div>
+          <button id="transfer" type="button" name="button" class="btn btn-lg btn-secondary font-weight-bold transfer">Transfer</button>
+        </div>
+      </div>
+    </div> <!--transfer buttons-->
+    </div>
+     <!-- container-->
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="js/bank.js"> </script>
+  </body>
+</html>
